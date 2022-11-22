@@ -1,0 +1,13 @@
+.container-fluid {
+    background-color: rgb(239, 238, 230);
+    /* height: 100vh; */
+    position: sticky;
+}
+
+.header {
+    background-color: rgba(255, 218, 98, 0.93);
+}
+
+.rojo {
+    border: 1px solid red !important;
+}

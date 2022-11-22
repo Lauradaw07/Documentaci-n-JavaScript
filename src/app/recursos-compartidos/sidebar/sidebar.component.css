@@ -1,0 +1,19 @@
+.botonMenu {
+    background-color: rgb(225, 175, 27);
+    font-size: large;
+    width: 350px;
+}
+
+.botonMenu:hover {width: 350px;}
+
+button {
+    background-color: rgb(225, 175, 27);
+    border-color: black;
+    font-size: large;
+}
+
+button:hover {background-color: rgb(190, 138, 0);}
+
+.rojo {
+    border: 1px solid red !important;
+}

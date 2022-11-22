@@ -1,0 +1,49 @@
+<button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menú</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Índice</h3>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+
+    <div class="row">
+      <div class="col-12 col-lg-12 mb-3 d-flex justify-content-center">
+        <div class="dropdown rojo">
+          <a class="btn btn-secondary dropdown-toggle botonMenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" routerLink="/sintaxis" routerLinkActive="active">
+            Sintaxis
+          </a>
+        
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/sintaxis/variables">Variables</a></li>
+            <li><a class="dropdown-item" routerLink="/sintaxis/funciones">Funciones</a></li>
+            <li><a class="dropdown-item" href="#">Estructuras y bucles</a></li>
+            <li><a class="dropdown-item" href="#">Tipos de datos básicos</a></li>
+            <li><a class="dropdown-item" href="#">Manejo de errores</a></li>
+            <li><a class="dropdown-item" href="#">Buenas prácticas</a></li>
+            <li><a class="dropdown-item" href="#">Clean Code</a></li>
+          </ul>
+        </div>
+      </div>   
+      
+      <div class="col-12 col-lg-12 d-flex justify-content-center">
+        <div class="dropdown rojo">
+          <a class="btn btn-secondary dropdown-toggle botonMenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" routerLink="/arrays" routerLinkActive="active">
+            Arrays
+          </a>
+        
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/sintaxis/variables">Introduccion</a></li>
+            <li><a class="dropdown-item" routerLink="/sintaxis/funciones">Funciones</a></li>
+            <li><a class="dropdown-item" href="#">Estructuras y bucles</a></li>
+            <li><a class="dropdown-item" href="#">Tipos de datos básicos</a></li>
+            <li><a class="dropdown-item" href="#">Manejo de errores</a></li>
+            <li><a class="dropdown-item" href="#">Buenas prácticas</a></li>
+            <li><a class="dropdown-item" href="#">Clean Code</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

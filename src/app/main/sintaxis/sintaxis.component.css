@@ -1,0 +1,32 @@
+img {
+    border-radius: 10px;
+    width: 400px;
+}
+
+.imagenGrande {
+    border-radius: 10px;
+    width: 500px;
+}
+
+/* .menu {
+    margin-top: 85px;
+    background-color: rgb(225, 175, 27); 
+} */
+
+.menu a {
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+    font-weight: bolder;
+    padding: 10px;
+    text-decoration: none;
+    z-index: 1 !important;
+}
+
+.subtitulo {
+    color: rgb(190, 138, 0);
+}
+
+.variables {
+    margin-top: 150px;
+}

@@ -1,0 +1,224 @@
+<div class="container">
+    <div class="row fixed-top">
+        <div class="col-12 col-lg-12">
+            <!--Menú-->
+            <nav class="navbar navbar-expand-lg" id="menu">
+
+                <div class="container-fluid d-flex justify-content-around">
+
+                    <a href="sintaxis/#1">Variables</a>
+                    <a href="sintaxis/#2">Funciones</a>
+                    <a href="sintaxis/#3">Estructuras y bucles</a>
+                    <a href="#4">Constantes</a>
+
+                    <!--Desplegable Operadores-->
+                    <div class="btn-group">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Operadores
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#5">Introducción</a></li>
+                                        <li><a class="dropdown-item" href="#6">Aritméticos</a></li>
+                                        <li><a class="dropdown-item" href="#7">De comparación</a></li>
+                                        <li><a class="dropdown-item" href="#8">Lógicos</a></li>
+                                        <li><a class="dropdown-item" href="#9">De asignación</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!--Variables-->
+    <div class="row variables">
+        <div class="col-12 col-lg-12 mt-4 d-flex justify-content-center">
+            <h3 id="1">Variables</h3>
+        </div>
+        <hr>
+
+        <div class="col-12 col-lg-12">
+            <div class="row">
+                <div class="col-12 col-lg-12">
+                    <p>
+                        JavaScript es un lenguaje débilmente tipado, por lo que al declarar las variables no se indica su tipo. Además, el tipo de una variable puede cambiar varias veces a lo largo de la ejecución del programa.
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-12 mt-3 mb-4">
+                    <img src="../../../assets/Variables.png" alt="Imagen no disponible">
+                </div>
+
+                <div class="col-12 col-lg-12">
+                    <p>Las variables pueden declararse con "var" o con "let". La diferencia está en que con "var", las variables tienen ámbito de función, pudiendo ser utilizadas desde cualquier punto de la función, o incluso antews de ser definidas.</p>
+                </div>
+
+                <div class="col-12 col-lg-12 mt-3 mb-4">
+                    <img src="../../../assets/var.png" alt="Imagen no disponible">
+                </div>
+
+                <div class="col-12 col-lg-12">
+                    <p>
+                        Sin embargo, con "let" las variables tienen ámbito de bloque, por lo que solo pueden ser utilizadas a partir de su definición en el código.
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-12 mt-3 mb-4">
+                    <img src="../../../assets/let.png" alt="Imagen no disponible">
+                </div>
+
+                <div class="col-12 col-lg-12">
+                    <p>
+                        Las constantes se definen con "const", se escriben siempre con mayúsculas y de les debe asignar un valor al declararlas. No se puede modificar el valor de una constante, por lo que si lo intentamos, se produce un error.
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-12 mt-3 mb-4">
+                    <img src="../../../assets/const.png" alt="Imagen no disponible">
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+    <!--Funciones-->
+    <div class="row">
+        <div class="col-12 col-lg-12 d-flex justify-content-center">
+            <h3 id="2">Funciones</h3>
+        </div>
+        <hr>
+
+        <div class="col-12 col-lg-12">
+            <div class="row">
+                <!--Introducción-->
+                <div class="col-12 col-lg-12">
+                    <p>
+                        Se declaran con la palabra reservada "function" y se les pasan los parámetros entre paréntesis. Pueden devolver un valor si se utiliza la palabra reservada "return" (si no tiene return, es como si devolviese undefined).
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-12 mt-3 mb-4">
+                    <img src="../../../assets/funcion.png" alt="Imagen no disponible">
+                </div>
+
+                <!--Hoisting-->
+                <div class="col-12 col-lg-12">
+                    <h4 class="subtitulo">Hoisting</h4>
+                </div>
+
+                <div class="col-12 col-lg-12">
+                    <p>
+                        Las funciones pueden utilizarse antes de haberlas declarado, gracias a una característica de JavaScript llamada <i>Hoisting</i>, que permite utilizar variables y funciones antes de inicializarlas, e impide que esto nos dé error. En el caso de las variables, almacena el nombre en memoria y les asigna "undefined", y en el caso de las funciones, las almacena por completo.
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-12 mt-3 mb-4 d-flex flex-column">
+                    <img class="imagenGrande mb-4" src="../../../assets/hoisting-variables.png" alt="Imagen no disponible">
+                    <img src="../../../assets/hoisting-funciones.png" alt="Imagen no disponible">
+                </div>
+
+                <!--Parámetros-->
+                <div class="col-12 col-lg-12">
+                    <h4 class="subtitulo">Parámetros</h4>
+                </div>
+
+                <div class="col-12 col-lg-12">
+                    <p>Son los valores que se pasan a la función para que los utilice y realice una tarea concreta.</p>
+                    <p>Si pasamos menos parámetros de los requeridos a una función, el valor de estos será "undefined".</p>
+                    <p>
+                        Se pueden asignar valores por defecto a los parámetros, que obtendrán este valor si no se le pasa ninguno a la función.
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-12 mt-3 mb-4 d-flex flex-column">
+                    <img src="../../../assets/parametros-por-defecto.png" alt="Imagen no disponible">
+                </div>
+
+                <div class="col-12 col-lg-12">
+                    <p>
+                        En el caso de no saber cuántos parámetros va a recibir la función, podemos acceder a ellos mediante el array "arguments[]".
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-12 mt-3 mb-4 d-flex flex-column">
+                    <img src="../../../assets/arguments.png" alt="Imagen no disponible">
+                </div>
+
+                <div class="col-12 col-lg-12">
+                    <p>
+                        Las funciones en JavaScript son un tipo de dato más, por lo que se pueden pasar por argumento o asignarlas a una variable.
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-12 mt-3 mb-4 d-flex flex-column">
+                    <img src="../../../assets/funcion-por-argumento.png" alt="Imagen no disponible">
+                </div>
+
+                <div class="col-12 col-lg-12 mt-3 mb-4 d-flex flex-column">
+                    <img src="../../../assets/funcion-asignada-a-variable.png" alt="Imagen no disponible">
+                </div>
+
+                <!--Funciones anónimas-->
+                <div class="col-12 col-lg-12">
+                    <h4 class="subtitulo">Funciones anónimas</h4>
+                </div>
+
+                <div class="col-12 col-lg-12">
+                    <p>
+                        Son funciones que se asignan a una variable, que pueden autoejecutarse o que se pueden asignar a un manejador de eventos.
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-12 mt-3 mb-4 d-flex flex-column">
+                    <img src="../../../assets/funcion-anonima.png" alt="Imagen no disponible">
+                </div>
+
+                <!--Arrow functions-->
+                <div class="col-12 col-lg-12">
+                    <h4 class="subtitulo">Funciones anónimas</h4>
+                </div>
+
+                <div class="col-12 col-lg-12">
+                    <p>
+                        Son funciones anónimas declaradas de una forma más corta.
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-12">
+                    <h5><b>Características:</b></h5>
+                    <ul>
+                        <li>Se elimina la palabra "function".</li>
+                        <li>Si la función solo tiene un parámetro, se pueden eliminar los paréntesis.</li>
+                        <li>Se utiliza el símnbolo "=>".</li>
+                        <li>Si el código del interior de la función solo ocupa una línea, se pueden eliminar las llaves y la palabra "return".</li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-6 mt-3 mb-4">
+                    <img src="../../../assets/no-arrow-function.png" alt="Imagen no disponible">
+                </div>
+
+                <div class="col-12 col-lg-6 mt-3 mb-4 d-flex flex-column">
+                    <img src="../../../assets/arrow-function.png" alt="Imagen no disponible">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-lg-12 mt-4 d-flex justify-content-center">
+            <h3 id="3">Estructuras y bucles</h3>
+        </div>
+        <hr>
+    </div>
+</div>
